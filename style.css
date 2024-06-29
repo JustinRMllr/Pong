@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.result-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4.5rem;
+}
+
+.result-wrapper > *{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.result-wrapper span{
+    font-weight: bold;
+}
+
+#gameboard{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.controls-wrapper{
+    display: none;
+}
+
+.message-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -52.5%);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1rem 2rem 2rem;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    text-align: center;
+}
+
+.message-wrapper h2{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 5px hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 1.25rem;
+}
+
+.message-wrapper p{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.9rem;
+}
+
+.message-wrapper button{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    background-color: black;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1.25rem;
+    transition: background-color 0.2s;
+}
+
+.message-wrapper button:hover{
+    background-color: hsl(0, 0%, 7.5%);
+}
+
+.message-wrapper button:active{
+    background-color: hsl(0, 0%, 15%);
+}
+
+.message-wrapper button:focus{
+    box-shadow: 0 0 10px hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 1100px){
+    .result-wrapper{
+        padding: 1rem 3%;
+    }
+    
+    .result-wrapper > *{
+        font-size: 3rem;
+    }
+
+    .message-wrapper{
+        padding: 0.8rem 1.6rem 1.6rem;
+    }
+
+    .message-wrapper h2{
+        font-size: 3.5rem;
+        margin-bottom: 1.1rem;
+    }
+    
+    .message-wrapper p{
+        font-size: 2.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .message-wrapper button{
+        padding: 0.8rem 1.6rem;
+        font-size: 2.75rem;
+        margin-top: 1.1rem;
+    }
+
+    .controls-wrapper{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 7%;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .controls-wrapper .controls-player-wrapper{
+        display: flex;
+        gap: 2.5rem;
+    }
+    
+    .controls-wrapper .controls-player-wrapper button{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0.5rem;
+        background-color: hsl(0, 0%, 7.5%);
+        color: white;
+        transition: background-color 0.2s;
+    }
+    
+    .controls-wrapper .controls-player-wrapper button:active{
+        background-color: hsl(0, 0%, 15%);
+    }
+    
+    .controls-wrapper .controls-player-wrapper button i{
+        font-size: 4.5rem;
+    }
+}

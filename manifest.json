@@ -1,0 +1,10 @@
+{
+    "name": "Pong",
+    "short_name": "Pong",
+    "theme_color": "#ffffff",
+    "background_color": "#000000",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+}

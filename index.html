@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="SourceFiles/PongFavicon.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Pong</title>
+</head>
+<body>
+    <div class="result-wrapper">
+        <p>Spieler 1: <span id="scoreDisplayPlayer1">0 Punkte</span></p>
+        <p>Spieler 2: <span id="scoreDisplayPlayer2">0 Punkte</span></p>
+    </div>
+    <canvas id="gameboard"></canvas>
+    <div class="controls-wrapper">
+        <div class="controls-player-wrapper">
+            <button class="control-button" name="player1" value="up">
+                <i class="bx bx-up-arrow-alt"></i>
+            </button>
+            <button class="control-button" name="player1" value="down">
+                <i class="bx bx-down-arrow-alt"></i>
+            </button>
+        </div>
+        <div class="controls-player-wrapper">
+            <button class="control-button" name="player2" value="up">
+                <i class="bx bx-up-arrow-alt"></i>
+            </button>
+            <button class="control-button" name="player2" value="down">
+                <i class="bx bx-down-arrow-alt"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
