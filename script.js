@@ -103,7 +103,6 @@ window.addEventListener("keyup", (e) => {
 arrowBtns.forEach((arrowBtn) => {
     arrowBtn.addEventListener("pointerdown", (e) => {
         const btn = e.currentTarget;
-        console.log(btn.name, btn.value)
         if(isActive){
             if(btn.name == "player1" && btn.value == "up"){
                 dyPlayer1 = -1;
@@ -123,24 +122,6 @@ arrowBtns.forEach((arrowBtn) => {
 
 arrowBtns.forEach((arrowBtn) => {
     arrowBtn.addEventListener("pointerup", (e) => {
-        const btn = e.currentTarget;
-        if(isActive){
-            if(btn.name == "player1" && btn.value == "up"){
-                dyPlayer1 = 0;
-            }
-            if(btn.name == "player1" && btn.value == "down"){
-                dyPlayer1 = 0;
-            }
-            if(btn.name == "player2" && btn.value == "up"){
-                dyPlayer2 = 0;
-            }
-            if(btn.name == "player2" && btn.value == "down"){
-                dyPlayer2 = 0;
-            }
-        }
-    });
-    
-    arrowBtn.addEventListener("pointerleave", (e) => {
         const btn = e.currentTarget;
         if(isActive){
             if(btn.name == "player1" && btn.value == "up"){
@@ -261,7 +242,6 @@ function initializeGame(){
 function handleGame(timeStamp){
     const deltaTime = (timeStamp - lastTime) / 1000;
     lastTime = timeStamp;
-    console.log(deltaTime)
 
     if(isGameOver){
         loadGameOverMessage(currentWinner);

@@ -201,7 +201,7 @@ body{
     .controls-wrapper .controls-player-wrapper button{
         border: 1px solid white;
         border-radius: 5px;
-        padding: 0.7rem;
+        padding: 0.65rem;
         background-color: hsl(0, 0%, 7.5%);
         color: white;
         transition: background-color 0.2s;
