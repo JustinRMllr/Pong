@@ -140,7 +140,7 @@ arrowBtns.forEach((arrowBtn) => {
         }
     });
     
-    arrowBtn.addEventListener("pointerleave", (e) => {
+    arrowBtn.addEventListener("pointerout", (e) => {
         const btn = e.currentTarget;
         if(isActive){
             if(btn.name == "player1" && btn.value == "up"){
