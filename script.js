@@ -169,7 +169,7 @@ function loadOpenningMessage(){
     openningDiv.classList.add("message-wrapper");
 
     h2.textContent = "Pong";
-    p1.textContent = "Hallo, lass uns doch ein Spiel Pong spielen.";
+    p1.textContent = `Spiele Pong gemeinsam mit deinen Freunden. ${window.innerWidth}`;
     p2.textContent = "Wer zuerst 5 Punkte erreicht, gewinnt!";
     button.textContent = "Spielen";
 
