@@ -139,7 +139,69 @@ body{
     .controls-wrapper .controls-player-wrapper button{
         border: 1px solid white;
         border-radius: 5px;
-        padding: 0.65rem;
+        padding: 1.1rem;
+        background-color: hsl(0, 0%, 7.5%);
+        color: white;
+        transition: background-color 0.2s;
+    }
+    
+    .controls-wrapper .controls-player-wrapper button:active{
+        background-color: hsl(0, 0%, 15%);
+    }
+    
+    .controls-wrapper .controls-player-wrapper button i{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 700px){
+    .result-wrapper{
+        padding: 1rem 3%;
+    }
+    
+    .result-wrapper > *{
+        font-size: 2.6rem;
+    }
+
+    .message-wrapper{
+        padding: 0.6rem 1.2rem 1.2rem;
+    }
+
+    .message-wrapper h2{
+        font-size: 3rem;
+        margin-bottom: 0.95rem;
+    }
+    
+    .message-wrapper p{
+        font-size: 2.3rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .message-wrapper button{
+        padding: 0.6rem 1.2rem;
+        font-size: 2.4rem;
+        margin-top: 0.95rem;
+    }
+
+    .controls-wrapper{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 7%;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .controls-wrapper .controls-player-wrapper{
+        display: flex;
+        gap: 2.5rem;
+    }
+    
+    .controls-wrapper .controls-player-wrapper button{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0.55rem;
         background-color: hsl(0, 0%, 7.5%);
         color: white;
         transition: background-color 0.2s;
