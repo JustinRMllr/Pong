@@ -4,7 +4,7 @@
     "theme_color": "#ffffff",
     "background_color": "#000000",
     "display": "fullscreen",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "scope": "/",
     "start_url": "/Pong/"
 }
