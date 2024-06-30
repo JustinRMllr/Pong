@@ -21,14 +21,14 @@ let isGameOver = false;
 const pong = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    flySpeedX: 6.5 + canvas.width / 2.35 + Math.random() * 17.5,
-    flySpeedY: 6.3 + canvas.height / 1.7 + Math.random() * 15.75,
+    flySpeedX: 6.5 + canvas.width / 2.35 + Math.random() * 16.5,
+    flySpeedY: 6.3 + canvas.height / 1.7 + Math.random() * 14.75,
     radius: 15,    
 }
 
 const bar = {
     width: 20,
-    height: canvas.height / 5.1,
+    height: canvas.height / 5.2,
     moveSpeed: canvas.height / 1.85,
     margin: 15
 };
