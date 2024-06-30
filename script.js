@@ -138,24 +138,6 @@ arrowBtns.forEach((arrowBtn) => {
             }
         }
     });
-
-    arrowBtn.addEventListener("pointerover", (e) => {
-        const btn = e.currentTarget;
-        if(isActive){
-            if(btn.name == "player1" && btn.value == "up"){
-                dyPlayer1 = 0;
-            }
-            if(btn.name == "player1" && btn.value == "down"){
-                dyPlayer1 = 0;
-            }
-            if(btn.name == "player2" && btn.value == "up"){
-                dyPlayer2 = 0;
-            }
-            if(btn.name == "player2" && btn.value == "down"){
-                dyPlayer2 = 0;
-            }
-        }
-    });
 });
 
 
